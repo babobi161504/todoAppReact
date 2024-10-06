@@ -62,18 +62,23 @@
 // }
 
 // export default App;
+
 import React from "react";
 import { Provider } from "react-redux";
 import store from "./store/store";
 import ComponentA from "../src/component/ComponentA"; // Import Component A từ tệp tin riêng
+import { Button } from "flowbite-react";
 
 function App() {
   return (
     <Provider store={store}>
-      <div className="app-container">
-        <h1>React Homework</h1>
-        <ComponentA />
-      </div>
+      <ComponentA />
+      {/* <div className="app-container">
+        <h1>React Homework</h1> */}
+
+      {/* <Button color="gray">Profile</Button>
+        <Button gradientMonochrome="info">Profile</Button> */}
+      {/* </div> */}
     </Provider>
   );
 }
